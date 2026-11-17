@@ -1,0 +1,47 @@
+/* Estilos das abas de conteúdo */
+.conteudo > div {
+    animation: aparece 0.3s ease;
+}
+@keyframes aparece {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.caixa input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.produto-card {
+    background: white;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+}
+
+.tag-oportunidade {
+    display: inline-block;
+    background: linear-gradient(135deg, #22a858, #2ecc71);
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+}
+
+.tag-alerta {
+    background: #f39c12;
+}
+
+.btn-gerar-video {
+    background: #9c27b0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 12px;
+    margin-top: 8px;
+    cursor: pointer;
+}

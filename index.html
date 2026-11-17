@@ -1,0 +1,65 @@
+<nav class="abas">
+    <button class="aba-ativa" id="aba-ofertas">📦 Ofertas</button>
+    <button id="aba-filtros">🔍 Filtros</button>
+    <button id="aba-filtrados">⭐ Oportunidades</button>
+    <button id="aba-videos">🎬 Vídeos</button>
+    <button id="aba-conta">👤 Conta</button>
+</nav>
+
+<div class="conteudo">
+    <!-- ABA OFERTAS -->
+    <div id="area-ofertas">
+        <h3>Clique para buscar ofertas da Shopee</h3>
+        <button class="botao-secundario" id="btn-carregar">🔄 Carregar Ofertas</button>
+    </div>
+
+    <!-- ABA FILTROS -->
+    <div id="area-filtros" style="display: none;">
+        <h3>🔍 Selecione seus Filtros</h3>
+        
+        <div class="caixa">
+            <label>👤 Máximo de afiliados:</label>
+            <input type="range" id="filtro-afiliados" min="1" max="50" value="10">
+            <p style="text-align:center; font-weight:bold;" id="valor-afiliados">Até 10 afiliados</p>
+        </div>
+
+        <div class="caixa">
+            <label>📊 Mínimo de vendas:</label>
+            <input type="range" id="filtro-vendas" min="0" max="500" value="10">
+            <p style="text-align:center; font-weight:bold;" id="valor-vendas">Pelo menos 10 vendidos</p>
+        </div>
+
+        <div class="caixa">
+            <label>💰 Comissão mínima (%):</label>
+            <input type="range" id="filtro-comissao" min="1" max="30" value="5">
+            <p style="text-align:center; font-weight:bold;" id="valor-comissao">Pelo menos 5% de comissão</p>
+        </div>
+
+        <button id="btn-aplicar" style="margin-top:20px;">✅ Aplicar Filtros</button>
+    </div>
+
+    <!-- ABA OPORTUNIDADES FILTRADAS -->
+    <div id="area-filtrados" style="display: none;">
+        <h3>⭐ Melhores Oportunidades</h3>
+        <p id="resumo-filtro">Aplique os filtros primeiro na aba 🔍 Filtros</p>
+        <button class="botao-secundario" id="btn-buscar-op">🔄 Encontrar Oportunidades</button>
+        <div id="lista-filtrados"></div>
+    </div>
+
+    <!-- ABA VIDEOS -->
+    <div id="area-videos" style="display: none;">
+        <h3>🎬 Gerador de Conteúdo</h3>
+        <p>Selecione um produto para gerar legendas prontas para Reels e TikTok!</p>
+        <div id="lista-para-video"></div>
+    </div>
+
+    <!-- ABA CONTA -->
+    <div id="area-conta" style="display: none;">
+        <h3>👤 Suas Configurações</h3>
+        <div class="caixa">
+            <p><strong>Nome:</strong> <span id="mostra-nome">-</span></p>
+            <p><strong>App ID:</strong> <span id="mostra-appid">-</span></p>
+            <button id="btn-sair" style="background:#e74c3c;">🚪 Sair</button>
+        </div>
+    </div>
+</div>
